@@ -17,9 +17,7 @@ function Screen01() {
                 <li className='mb-2'>
                   A única forma de avanzar nas pantallas é respondendo a todas as palabras ben.
                 </li>
-                <li className='mb-2'>
-                  Hai que respetar maiúsculas, minúsculas e tildes senon a palabra será marcada como erro.
-                </li>
+                <li className='mb-2'>Acórdate de poñer as tildes ou a palabra será marcada como erro.</li>
                 <li className='mb-2'>
                   Se cometes algún erro, terás que volver a completar TODA esa pantalla
                 </li>

@@ -126,16 +126,16 @@ function Questions5() {
   }
 
   const checkResults = () => {
-    answer1 !== lista[0].solucion && setError1(1);
-    answer2 !== lista[1].solucion && setError2(1);
-    answer3 !== lista[2].solucion && setError3(1);
-    answer4 !== lista[3].solucion && setError4(1);
-    answer5 !== lista[4].solucion && setError5(1);
-    answer6 !== lista[5].solucion && setError6(1);
-    answer7 !== lista[6].solucion && setError7(1);
-    answer8 !== lista[7].solucion && setError8(1);
-    answer9 !== lista[8].solucion && setError9(1);
-    answer10 !== lista[9].solucion && setError10(1);
+    answer1.toLowerCase() !== lista[0].solucion && setError1(1);
+    answer2.toLowerCase() !== lista[1].solucion && setError2(1);
+    answer3.toLowerCase() !== lista[2].solucion && setError3(1);
+    answer4.toLowerCase() !== lista[3].solucion && setError4(1);
+    answer5.toLowerCase() !== lista[4].solucion && setError5(1);
+    answer6.toLowerCase() !== lista[5].solucion && setError6(1);
+    answer7.toLowerCase() !== lista[6].solucion && setError7(1);
+    answer8.toLowerCase() !== lista[7].solucion && setError8(1);
+    answer9.toLowerCase() !== lista[8].solucion && setError9(1);
+    answer10.toLowerCase() !== lista[9].solucion && setError10(1);
     setCheck(true);
   };
 
@@ -220,9 +220,24 @@ function Questions5() {
                     <Chip label={value} color='primary' className='m-1' />
                   ))}
                   <div className='text-center mt-2'>
-                    <Button color='success' onClick={() => checkResults()}>
-                      COMPROBAR
-                    </Button>
+                    {!answer1 ||
+                    !answer2 ||
+                    !answer3 ||
+                    !answer4 ||
+                    !answer5 ||
+                    !answer6 ||
+                    !answer7 ||
+                    !answer8 ||
+                    !answer9 ||
+                    !answer10 ? (
+                      <Button disabled color='light'>
+                        COMPROBAR
+                      </Button>
+                    ) : (
+                      <Button color='success' onClick={() => checkResults()}>
+                        COMPROBAR
+                      </Button>
+                    )}
                   </div>
                 </>
               )}
