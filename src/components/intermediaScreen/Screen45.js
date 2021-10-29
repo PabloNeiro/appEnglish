@@ -14,8 +14,10 @@ function Screen45() {
           <CardBody className='text-center'>
             <CardText>En esta pantalla hai opcións de resposta a maiores que non hai que usar.</CardText>
             <CardText>
-              Ademáis, hai <b>dúas palabras que non teñen a resposta entre as opcións</b> que se dan. Hay que
-              sabelas...
+              Ademáis, hai <b>dúas palabras que non teñen a resposta entre as opcións</b> que se dan.
+            </CardText>
+            <CardText>
+              Terás que buscar a traducción pola túa conta, aínda que son faciliñas e seguro que as sabes!
             </CardText>
           </CardBody>
         </Card>

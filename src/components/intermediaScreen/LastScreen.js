@@ -7,7 +7,8 @@ function LastScreen() {
       <Col>
         <Card>
           <CardBody className='text-center'>
-            <CardTitle tag='h5'>YUHUUUUU!!!!</CardTitle>
+            <CardTitle tag='h5'>YUHUUUUU!!!! </CardTitle>
+            <CardTitle tag='h5'>CONSEGUÍCHELO!!!!</CardTitle>
           </CardBody>
           <img
             alt='Card  cap'

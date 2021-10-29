@@ -155,7 +155,7 @@ function Questions() {
   return (
     <>
       <Container>
-        <Row className='mt-2'>
+        <Row className='mt-1'>
           <Col xs='12' className='text-center mb-1'>
             {!check ? (
               <Button color='success' block disabled>
@@ -181,10 +181,10 @@ function Questions() {
           <Col xs={12} className='p-3'>
             {lista.map((value) => (
               <FormGroup row>
-                <Label for='exampleEmail' xs={5}>
+                <Label for='exampleEmail' xs={6}>
                   {value.palabra}
                 </Label>
-                <Col xs={6}>
+                <Col xs={5}>
                   <div className={value.background}>
                     {check ? (
                       <Input

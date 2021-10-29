@@ -21,7 +21,7 @@ function Screen34() {
       </Col>
       <Col xs='12' className=' text-center mt-5'>
         <Link to='/questions4' className='btn btn-success'>
-          SIGUIENTE PANTALLA
+          SEGUINTE PANTALLA
         </Link>
       </Col>
     </Row>
